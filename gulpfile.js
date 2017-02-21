@@ -113,7 +113,4 @@ gulp.task('watch',function () {
   gulp.watch(config.paths.src.less + '**/*.less', ['less']);
 	gulp.watch(config.paths.src.js + "**/*.js", ['scripts']);
   gulp.watch(config.paths.src.img + "**/*.*", ['copy']);
-  gulp.watch("mockups/*.html").on('change', browserSync.reload);
-  gulp.watch("mockups/assets/css/*.css").on('change', browserSync.reload);
-  gulp.watch("mockups/assets/js/*.js").on('change', browserSync.reload);
 });

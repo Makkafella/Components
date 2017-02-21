@@ -1,0 +1,119 @@
+.image-puff{
+  position: relative;
+  width: 100%;
+  a{
+    background-color: $red;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    @media (min-width: $screen-md-min) {
+      display: table;
+    }
+    .content{
+      display: block;
+      padding: 20px;
+      position: relative;
+      width: 100%;
+      vertical-align: middle;
+      @media (min-width: $screen-md-min) {
+        display: table-cell;
+        width: 50%;
+        &:after{
+          background-color: rgba($red, 1);
+          content: "";
+          display: block;
+          bottom: 0;
+          height: 100%;
+          left: -45px;
+          position: absolute;
+          top: 0;
+          transform: skewX(-7deg) scale(1);
+          transform-origin: bottom left;
+          width: 100px;
+        }
+        &:before{
+          background-color: rgba($red, 0.75);
+          content: "";
+          display: block;
+          bottom: 0;
+          height: 100%;
+          left: -65px;
+          position: absolute;
+          top: 0;
+          transform: skewX(-7deg) scale(1);
+          transform-origin: bottom left;
+          transition: left .5s cubic-bezier(.215, .61, .355, 1);
+          width: 100px;
+        }
+      }
+      @media (min-width: $screen-lg-min) {
+        width: 60%;
+      }
+      h2{
+        color: $white;
+        font-size: 20px;
+        margin-top: 0;
+        position: relative;
+        z-index: 2;
+      }
+      p{
+        color: $white;
+        font-size: 14px;
+        position: relative;
+        z-index: 2;
+      }
+    }
+    .image{
+      display: block;
+      position: relative;
+      overflow: hidden;
+      transform: skewY(3deg);
+      transform-origin: bottom right;
+      position: relative;
+      width: 100%;
+      &:before{
+        background-color: rgba($red, 0.75);
+        content: "";
+        display: block;
+        bottom: 0;
+        height: 20px;;
+        left: 0;
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+      }
+      img{
+        height: auto;
+        transform: skewY(-3deg);
+        transform-origin: bottom right;
+        width: 100%;
+      }
+      @media (min-width: $screen-md-min) {
+        transform: skewY(0deg);
+        display: table-cell;
+        width: 50%;
+        &:before{
+          display: none;
+        }
+        img{
+          transform: skewY(0deg);
+        }
+      }
+      @media (min-width: $screen-lg-min) {
+        width: 40%;
+      }
+
+    }
+    &:hover{
+      .content{
+        @media (min-width: $screen-md-min) {
+          &:before{
+            left: -85px;
+          }
+        }
+      }
+    }
+  }
+}

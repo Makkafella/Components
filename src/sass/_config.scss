@@ -5,7 +5,7 @@ $l_purple: lighten($purple, 20%);
 $orange: #EA6E14;
 $l_orange: lighten($orange, 10%);
 $d_orange: darken($orange, 10%);
-$red: #DB0028;
+$red: #bf261b;
 $blue: #417CD4;
 $d_blue: darken($blue, 15%);
 $yellow: #FBBD15;
@@ -114,55 +114,3 @@ $text_bold: $fonts;
 }
 
 $block-margin-bottom: 40px;
-
-@mixin vertical-align($position: relative) {
-  position: $position;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  border-radius: $radius;
-  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
-}
-@mixin background-size($type) {
-  -webkit-background-size: $type;
-  -moz-background-size: $type;
-  -o-background-size: $type;
-  background-size: $type;
-}
-@mixin opacity($opacity) {
-  opacity: $opacity;
-  $opacity-ie: $opacity * 100;
-  filter: alpha(opacity=$opacity-ie); //IE8
-}
-
-@mixin clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
-@mixin reset-ul {
-  margin:0;
-  list-style: none;
-  padding:0;
-}
-
-@mixin opacity($opacity) {
-  opacity: $opacity;
-  $opacity-ie: $opacity * 100;
-  filter: alpha(opacity=$opacity-ie); //IE8
-}
-
-@mixin inline-block {
- display: inline-block;
- zoom: 1;
- *display: inline;
-}

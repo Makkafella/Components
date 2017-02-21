@@ -76,6 +76,11 @@ section{
 a, .btn {
   @include transition(all 0.3s);
 }
+
+.vertical-align{
+  @include vertical-align();
+}
+
 @media (min-width: $screen-xs-min) {
 }
 @media (min-width: $screen-sm-min) {
