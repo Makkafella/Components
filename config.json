@@ -8,17 +8,12 @@
   "js": {
     "output": "scripts.js",
     "libs": [
-
+      "jquery/dist/jquery.min.js",
+      "underscore/underscore.js"
     ],
     "includes": [
       "**/*.js"
     ]
-  },
-  "iconfont": {
-    "sketchfile": "./src/sketchicons/symbols.sketch",
-    "csstemplate": "./src/sketchicons/template.css",
-    "htmltemplate": "./src/sketchicons/template_web.html",
-    "fontname": "symbols"
   },
   "paths": {
     "src": {
@@ -28,7 +23,6 @@
       "sass": "./src/sass/",
       "less": "./src/less/",
       "fonts": "./src/fonts/",
-      "sketchicons": "./src/sketchicons/",
       "img": "./src/img/",
       "dummy": "./src/dummy-content/",
       "html": {
@@ -49,13 +43,13 @@
         "html": ""
       },
       "prod": {
-        "dir": "./prod",
+        "dir": "../Pure.MVC/assets/",
         "js": "js/",
         "css": "css/",
         "fonts": "fonts/",
         "img": "img/",
         "dummy": "dummy-content/",
-        "html": ""
+        "html": "mockups/"
       }
     }
   }

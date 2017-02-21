@@ -1,15 +1,9 @@
-var ftvintra = {
+var components = {
 	init: function() {
-
-		//ftvintra.startPage();
+		startPage.init();
 	},
-	startPage: function() {
-		if ($('.page-startpage').length) {
-			startPage.init();
-		}
-	}
 };
 
 jQuery(document).ready(function($) {
-	ftvintra.init();
+	components.init();
 });

@@ -4,6 +4,6 @@ var startPage = {
   },
 
   someFunction: function(){
-
+    
   }
 };
