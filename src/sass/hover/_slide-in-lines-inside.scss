@@ -1,0 +1,33 @@
+.slide-in-lines-inside{
+	position: relative;
+	&:before{
+		bottom: -1px;
+		background-color: #000;
+		content: "";
+		height: 1px;
+		display: block;
+		left: 50%;
+		position: absolute;
+	 transition: width .35s ease-in;
+		width: 0;
+	}
+	&:after{
+		bottom: -1px;
+		background-color: #000;
+		content: "";
+		height: 1px;
+		display: block;
+		position: absolute;
+		right: 50%;
+		transition: width .35s ease-in;
+		width: 0;
+	}
+	&:hover{
+		&:before{
+			width: 50%;
+		}
+		&:after{
+			width: 50%;
+		}
+	}
+}

@@ -1,0 +1,38 @@
+.slide-in-bg {
+	padding: 0 4px;
+	position: relative;
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		background: #76c892;
+		left: 0;
+		right: 0;
+		z-index: -1;
+		transition: all 0.35s ease-in;
+	}
+	&.bottom-up{
+		&:after{
+			bottom: 0;
+			top: 100%;
+		}
+	}
+	&.top-down{
+		&:after{
+			bottom: 100%;
+			top: 0;
+		}
+	}
+	&:hover {
+		&.bottom-up{
+			&:after {
+				top: 0;
+			}
+		}
+		&.top-down{
+			&:after{
+				bottom: 0;
+			}
+		}
+	}
+}

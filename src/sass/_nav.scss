@@ -1,0 +1,38 @@
+nav{
+  margin: 10px 0;
+  padding: 0 10px;
+  &:before{
+    content: " ";
+    display: table;
+  }
+  @media (min-width: $screen-sm-min) {
+    margin: 20px 0;
+    padding: 0 20px;
+  }
+  @media (min-width: $screen-md-min) {
+    margin: 40px 0;
+    padding: 0 40px;
+  }
+
+  .reset-ul{
+    li{
+      font-size: 14px;
+    }
+  }
+}
+@media (min-width: $screen-xs-min) {
+
+}
+@media (min-width: $screen-sm-min) {
+
+}
+@media (min-width: $screen-md-min) {
+
+}
+@media (min-width: $screen-lg-min) {
+
+}
+
+@media (max-width: $screen-xs-max) {
+
+}

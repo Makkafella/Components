@@ -1,0 +1,9 @@
+footer {
+	&:before{
+    content: " ";
+    display: table;
+  }
+  @media (min-width: $screen-md-min) {
+
+  }
+}

@@ -1,0 +1,22 @@
+.flex-grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 0;
+  margin-right: 0;
+  
+  &.align-center{
+    align-items: center;
+  }
+  div[class^="col-"]{
+    padding-left: 0;
+    padding-right: 0;
+    padding: 5px;
+    @media (min-width: $screen-sm-min) {
+      padding: 10px;
+    }
+    @media (min-width: $screen-md-min) {
+      padding: 20px;
+    }
+  }
+}

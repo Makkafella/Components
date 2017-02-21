@@ -1,0 +1,62 @@
+{
+  "projectinfo": {
+    "name": "Components"
+  },
+  "css": {
+    "autoprefixer": "last 2 versions"
+  },
+  "js": {
+    "output": "scripts.js",
+    "libs": [
+
+    ],
+    "includes": [
+      "**/*.js"
+    ]
+  },
+  "iconfont": {
+    "sketchfile": "./src/sketchicons/symbols.sketch",
+    "csstemplate": "./src/sketchicons/template.css",
+    "htmltemplate": "./src/sketchicons/template_web.html",
+    "fontname": "symbols"
+  },
+  "paths": {
+    "src": {
+      "dependencies": "./src/dependencies/",
+      "src": "./src/",
+      "js": "./src/scripts/",
+      "sass": "./src/sass/",
+      "less": "./src/less/",
+      "fonts": "./src/fonts/",
+      "sketchicons": "./src/sketchicons/",
+      "img": "./src/img/",
+      "dummy": "./src/dummy-content/",
+      "html": {
+        "dir": "./src/html/",
+        "hintrc":"./src/html/.htmlhintrc",
+        "pages": "./src/html/pages/",
+        "partials": ["./src/html/block/", "./src/html/includes/"]
+      }
+    },
+    "destination": {
+      "dev": {
+        "dir": "./mockups/",
+        "js": "assets/js/",
+        "css": "assets/css/",
+        "fonts": "assets/fonts/",
+        "img": "assets/img/",
+        "dummy": "assets/dummy-content/",
+        "html": ""
+      },
+      "prod": {
+        "dir": "./prod",
+        "js": "js/",
+        "css": "css/",
+        "fonts": "fonts/",
+        "img": "img/",
+        "dummy": "dummy-content/",
+        "html": ""
+      }
+    }
+  }
+}

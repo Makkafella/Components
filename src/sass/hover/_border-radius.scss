@@ -1,0 +1,19 @@
+.border-radius{
+	a{
+		background: #76c892;
+		line-height: 50px;
+		padding: 10px 20px;
+		text-align: center;
+
+		&.avatar-wobble-hover {
+			border-radius: 5px;
+			// border-radius: 25px / 50px;
+			// transition: border-radius 0.5s ease-in;
+
+			&:hover{
+				animation: wobble 3s ease-in-out alternate infinite;
+				// border-radius: 750px 250px 750px 250px / 250px 750px 250px 750px;
+			}
+		}
+	}
+}

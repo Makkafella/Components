@@ -1,0 +1,13 @@
+{
+  "name": "components",
+  "dependencies": {
+    "modernizr": "2.x",
+    "sass-bootstrap": "3.x",
+    "underscore": "~1.8.3",
+    "responsive-bootstrap-toolkit": "responsive-toolkit#~2.5.1",
+    "bootstrap-dropdown": "*"
+  },
+  "resolutions": {
+    "jquery": "2.x"
+  }
+}

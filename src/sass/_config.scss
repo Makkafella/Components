@@ -1,0 +1,168 @@
+/* Colors */
+$purple: #653387;
+$d_purple: darken($purple, 12%);
+$l_purple: lighten($purple, 20%);
+$orange: #EA6E14;
+$l_orange: lighten($orange, 10%);
+$d_orange: darken($orange, 10%);
+$red: #DB0028;
+$blue: #417CD4;
+$d_blue: darken($blue, 15%);
+$yellow: #FBBD15;
+$green: #008770;
+$d_green: darken($green, 8%);
+$black: #333332;
+$brown: #B3995D;
+$yellow: #FBBD15;
+
+$white: #FFFFFF;
+$bgray1: #F4F2ED;
+$bgray2: #E6E4DF;
+$bgray3: #B3B1AD;
+$bgray4: #cdcbc6;
+
+$dgray1: #807E7C;
+$dgray2: #4D4C4A;
+$dgray3: $black;
+
+
+/* Fonts */
+// $font_body_regular: 'BemboStd';
+$fonts:  -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+$font_body_regular: $fonts;
+$font_body_bold: $fonts;
+$font_heading: $fonts;
+// $font_text: 'Open Sans';
+$font_text: $fonts;
+// $text_italic: 'Open Sans';
+$text_italic: $fonts;
+// $text_bold: 'Open Sans';
+$text_bold: $fonts;
+// $font-family-base: $font_body_regular;
+
+@mixin text_semibold($style: normal){
+  font-family: $font_text;
+  font-style: $style;
+  font-weight: 600;
+}
+
+@mixin text_regular($style: normal){
+  font-family: $font_text;
+  font-style: $style;
+  font-weight: 400;
+}
+@mixin text_italic($style: italic){
+  font-family: $font_text;
+  font-style: $style;
+  font-weight: 300;
+}
+
+@mixin text_bold($style: normal){
+  font-family: $font_text;
+  font-style: $style;
+  font-weight: 700;
+}
+
+@mixin heading_bold($style: normal){
+  font-family: $font_heading;
+  font-style: $style;
+  font-weight: 700;
+}
+
+@mixin heading_regular($style: normal){
+  font-family: $font_heading;
+  font-style: $style;
+  font-weight: 400;
+}
+
+@mixin body_bold($style: normal){
+  font-family: $font_body_regular;
+  font-style: $style;
+  font-weight: 700;
+}
+@mixin body_medium($style: normal){
+  font-family: $font_body_regular;
+  font-style: $style;
+  font-weight: 600;
+}
+@mixin body_regular($style: normal){
+  font-family: $font_body_regular;
+  font-style: $style;
+  font-weight: 400;
+}
+
+@mixin body_lead($style: normal){
+  // font-family: $font_body_bold;
+  font-family: $font_heading;
+  font-style: $style;
+  font-weight: 700;
+}
+
+@mixin body_link($style: normal){
+  font-family: $font_body_bold;
+  font-style: $style;
+  font-weight: 700;
+}
+
+@mixin timestamp($style: normal){
+  font-family: $font_text;
+  font-style: $style;
+  font-weight: 600;
+}
+
+$block-margin-bottom: 40px;
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+@mixin background-size($type) {
+  -webkit-background-size: $type;
+  -moz-background-size: $type;
+  -o-background-size: $type;
+  background-size: $type;
+}
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin reset-ul {
+  margin:0;
+  list-style: none;
+  padding:0;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin inline-block {
+ display: inline-block;
+ zoom: 1;
+ *display: inline;
+}
