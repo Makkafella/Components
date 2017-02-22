@@ -86,8 +86,9 @@
       }
       img{
         height: auto;
-        transform: skewY(-3deg);
+        transform: skewY(-3deg) scale(1);
         transform-origin: bottom right;
+        transition: transform .5s cubic-bezier(.215, .61, .355, 1);
         width: 100%;
       }
       @media (min-width: $screen-md-min) {
@@ -99,6 +100,7 @@
         }
         img{
           transform: skewY(0deg);
+          transform-origin: center center;
         }
       }
       @media (min-width: $screen-lg-min) {
@@ -112,6 +114,14 @@
           &:before{
             left: -85px;
           }
+        }
+      }
+      img{
+        transform: skewY(-3deg) scale(1.1);
+      }
+      @media (min-width: $screen-md-min) {
+        img{
+          transform: scale(1.1);
         }
       }
     }

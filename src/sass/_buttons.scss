@@ -2,9 +2,8 @@
   @include body_regular();
   background-color: $blue;
   color: $white;
-		display: inline-block;
+	display: inline-block;
   font-size: 14px;
-  overflow: hidden;
   min-width: 220px;
   padding: 10px 20px;
   position: relative;
@@ -23,25 +22,26 @@
     color: $blue;
   }
   &.skew{
+    overflow: hidden;
     transition: color .15s linear;
     &:before{
-      display: block;
       background-color: $blue;
+      bottom: 0;
       content: '';
-						font-size: 0;
       height: 100%;
-      left: -2px;
+      left: 0;
       position: absolute;
+      right: 0;
       top: 0;
       transform-origin: top left;
-      transform: skewX(-12deg) scaleX(0);
+      transform: skewX(0deg) scaleX(0);
       transition: transform .5s cubic-bezier(.215, .61, .355, 1);
-      width: 100%;
+      width: 105%;
     }
     &:hover{
       color: $white;
       &:before{
-        transform: skewX(-12deg) scaleX(1.075);
+        transform: skewX(-12deg) scaleX(1.2);
       }
     }
   }
