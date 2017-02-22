@@ -9,7 +9,9 @@
     "output": "scripts.js",
     "libs": [
       "jquery/dist/jquery.min.js",
-      "underscore/underscore.js"
+      "underscore/underscore.js",
+      "masonry/dist/masonry.pkgd.min.js",
+      "imagesloaded/imagesloaded.pkgd.min.js"
     ],
     "includes": [
       "**/*.js"

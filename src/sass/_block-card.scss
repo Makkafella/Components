@@ -1,6 +1,11 @@
 .card{
   a{
     border: 1px solid $bgray4;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px 0px rgba(230,228,223,1);
+    display: block;
+    overflow: hidden;
+    position: relative;
     text-decoration: none;
     transition: border-color .2s linear;
     .card-image{
@@ -45,6 +50,12 @@
           transform: scale(1.1);
         }
       }
+    }
+  }
+  &.card-full{
+    width: 100%;
+    a{
+      width: 100%;
     }
   }
 }

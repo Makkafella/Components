@@ -50,9 +50,6 @@
 @import "src/dependencies/sass-bootstrap/lib/utilities";
 @import "src/dependencies/sass-bootstrap/lib/responsive-utilities";
 
-
-
-
 @import "animations";
 @import "mixins";
 @import 'ie-only';
@@ -73,4 +70,5 @@
 @import "block-content-puff";
 @import "block-image-puff";
 @import "block-card";
+@import "block-masonry-grid";
 //Pages

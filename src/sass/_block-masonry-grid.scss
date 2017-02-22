@@ -1,0 +1,26 @@
+.masonry-grid{
+  article{
+    width: 200px;
+    a{
+      .card-image{
+        overflow: hidden;
+        img{
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+    @media (min-width: $screen-xs-min) {
+      width: 50%;
+    }
+    @media (min-width: $screen-sm-min) {
+      width: 25%;
+    }
+    @media (min-width: $screen-md-min) {
+      width: 20%;
+    }
+    @media (min-width: $screen-lg-min) {
+      width: 10%;
+    }
+  }
+}

@@ -5,7 +5,9 @@
     "sass-bootstrap": "3.x",
     "underscore": "~1.8.3",
     "responsive-bootstrap-toolkit": "responsive-toolkit#~2.5.1",
-    "bootstrap-dropdown": "*"
+    "bootstrap-dropdown": "*",
+    "masonry": "^4.1.1",
+    "imagesloaded": "^4.1.1"
   },
   "resolutions": {
     "jquery": "2.x"

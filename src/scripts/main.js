@@ -1,6 +1,6 @@
 var components = {
 	init: function() {
-		startPage.init();
+		masonry.init();
 	},
 };
 
