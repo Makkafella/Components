@@ -1,0 +1,50 @@
+.card{
+  a{
+    border: 1px solid $bgray4;
+    text-decoration: none;
+    transition: border-color .2s linear;
+    .card-image{
+      overflow: hidden;
+      img{
+        height: auto;
+        transform: scale(1);
+        transform-origin: center center;
+        transition: transform .8s cubic-bezier(.19, 1, .22, 1);
+        width: 100%;
+      }
+    }
+    .card-text{
+      background-color: $white;
+      padding: 10px;
+      .card-tag{
+        color: $dgray2;
+        font-size: 12px;
+      }
+      h3{
+        color: $black;
+        font-size: 18px;
+        margin-bottom: 4px;
+        margin-top: 10px;
+      }
+      p{
+        color: $black;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        margin-top: 0;
+      }
+      time{
+        color: $dgray2;
+        font-size: 12px;
+      }
+    }
+    &:hover{
+      border-color: $bgray3;
+      .card-image{
+        img{
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

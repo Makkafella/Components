@@ -29,11 +29,11 @@ article{
 section{
   margin: 10px 0;
   padding: 0 10px;
-  @media (min-width: $screen-sm-min) {
+  @media (min-width: $screen-md-min) {
     margin: 20px 0;
     padding: 0 20px;
   }
-  @media (min-width: $screen-md-min) {
+  @media (min-width: $screen-lg-min) {
     margin: 40px 0;
     padding: 0 40px;
   }
@@ -43,15 +43,6 @@ section{
   }
   &:first-child{
     margin-top: 0;
-  }
-  &.flex-grid{
-    padding:0 5px;
-    @media (min-width: $screen-sm-min) {
-      padding:0 10px;
-    }
-    @media (min-width: $screen-md-min) {
-      padding:0 20px;
-    }
   }
 }
 .reset-ul{

@@ -1,22 +1,29 @@
 .flex-grid{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-left: 0;
-  margin-right: 0;
-  
-  &.align-center{
-    align-items: center;
-  }
-  div[class^="col-"]{
-    padding-left: 0;
-    padding-right: 0;
-    padding: 5px;
-    @media (min-width: $screen-sm-min) {
-      padding: 10px;
-    }
+  font-size: 0;
+  main{
+    margin: 0;
     @media (min-width: $screen-md-min) {
-      padding: 20px;
+      margin: -10px;
+    }
+    @media (min-width: $screen-lg-min) {
+      margin: -20px;
+    }
+    article{
+      display: inline-flex;
+      margin-bottom: 10px;
+      padding: 0;
+      position: relative;
+      vertical-align: top;
+      width: 100%;
+      @media (min-width: $screen-md-min) {
+        margin-bottom: 0;
+        padding: 10px;
+        width: 50%;
+      }
+      @media (min-width: $screen-lg-min) {
+        padding: 20px;
+        width: 25%;
+      }
     }
   }
 }
