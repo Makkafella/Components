@@ -67,7 +67,11 @@ section{
 a, .btn {
   @include transition(all 0.3s);
 }
-
+.hover-lines{
+	&:hover{
+		text-decoration: none;
+	}
+}
 .vertical-align{
   @include vertical-align();
 }

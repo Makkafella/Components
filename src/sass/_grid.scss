@@ -2,28 +2,39 @@
   font-size: 0;
   main{
     margin: 0;
-    @media (min-width: $screen-md-min) {
-      margin: -10px;
-    }
-    @media (min-width: $screen-lg-min) {
-      margin: -20px;
-    }
+				@media (min-width: $screen-xs-min) {
+				}
+				@media (min-width: $screen-sm-min) {
+				}
+				@media (min-width: $screen-md-min) {
+					margin: -10px;
+				}
+				@media (min-width: $screen-lg-min) {
+					margin: -20px;
+				}
     article{
       display: inline-flex;
       margin-bottom: 10px;
       padding: 0;
       position: relative;
       vertical-align: top;
-      width: 100%;
-      @media (min-width: $screen-md-min) {
-        margin-bottom: 0;
-        padding: 10px;
-        width: 50%;
-      }
-      @media (min-width: $screen-lg-min) {
-        padding: 20px;
-        width: 25%;
-      }
+						@media (min-width: $screen-xs-min) {
+							width: 100%;
+						}
+						@media (min-width: $screen-sm-min) {
+							margin-bottom: 0;
+							padding: 10px;
+							width: 50%;
+						}
+						@media (min-width: $screen-md-min) {
+							margin-bottom: 0;
+							padding: 10px;
+							width: 33.33%;
+						}
+						@media (min-width: $screen-lg-min) {
+							padding: 20px;
+							width: 25%;
+						}
     }
   }
 }
