@@ -1,6 +1,7 @@
 var components = {
 	init: function() {
 		masonry.init();
+		request.init();
 	},
 };
 

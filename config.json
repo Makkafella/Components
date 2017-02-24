@@ -11,7 +11,9 @@
       "jquery/dist/jquery.min.js",
       "underscore/underscore.js",
       "masonry/dist/masonry.pkgd.min.js",
-      "imagesloaded/imagesloaded.pkgd.min.js"
+      "imagesloaded/imagesloaded.pkgd.min.js",
+      "nanoajax/nanoajax.min.js"
+
     ],
     "includes": [
       "**/*.js"
