@@ -1,5 +1,11 @@
 .masonry-grid{
 	padding: 0;
+	transform-origin: top center;
+	transform: scale(0);
+	transition: transform .5s cubic-bezier(.215, .61, .355, 1);
+	&.loaded{
+		transform: scale(1);
+	}
 	@media (min-width: $screen-sm-min) {
 		padding: 0 10px;
 	}

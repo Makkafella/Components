@@ -6,6 +6,7 @@ var masonry = {
         var msnry = new Masonry( elem, {
           itemSelector: '.masonry-grid .card'
         });
+        elem.classList.add('loaded');
       });
     }
   }
