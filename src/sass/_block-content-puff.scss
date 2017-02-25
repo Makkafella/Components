@@ -5,7 +5,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 55vh;
+    height: 400px;
     position: relative;
     z-index: 1;
   }
@@ -32,7 +32,6 @@
     }
     main{
       background-color: $white;
-      min-height: calc(45vh - (35px + 68px));
       padding: 20px;
       @media (min-width: $screen-sm-min) {
         padding: 20px 40px;
