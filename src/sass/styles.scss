@@ -49,6 +49,19 @@
 // Utility classes
 @import "src/dependencies/sass-bootstrap/lib/utilities";
 @import "src/dependencies/sass-bootstrap/lib/responsive-utilities";
+@import "src/dependencies/font-awesome/scss/variables";
+@import "src/dependencies/font-awesome/scss/mixins";
+// @import "path";
+@import "src/dependencies/font-awesome/scss/core";
+@import "src/dependencies/font-awesome/scss/larger";
+@import "src/dependencies/font-awesome/scss/fixed-width";
+@import "src/dependencies/font-awesome/scss/list";
+@import "src/dependencies/font-awesome/scss/bordered-pulled";
+@import "src/dependencies/font-awesome/scss/animated";
+@import "src/dependencies/font-awesome/scss/rotated-flipped";
+@import "src/dependencies/font-awesome/scss/stacked";
+@import "src/dependencies/font-awesome/scss/icons";
+@import "src/dependencies/font-awesome/scss/screen-reader";
 
 @import "animations";
 @import "mixins";
@@ -71,4 +84,6 @@
 @import "block-image-puff";
 @import "block-card";
 @import "block-masonry-grid";
+
 //Pages
+@import "pages-editorial";

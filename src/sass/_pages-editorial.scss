@@ -1,0 +1,234 @@
+$editorialContentText: #B9BBB9;
+$editorialContentOrange: #F29336;
+$editorialArticleOverlay: #17304B;
+$architectureBackground: #E2E3DE;
+$architectureArticleBackground: #FD383B;
+
+@mixin topAndBottomLines(){
+  content: "";
+  display: block;
+  background-color: $white;
+  height: 1px;
+  left: 50%;
+  margin-left: -30px;
+  position: absolute;
+  width: 60px;
+}
+@mixin architectureTopAndBottomLines(){
+  content: "";
+  display: block;
+  background-color: $white;
+  height: 1px;
+  position: absolute;
+  width: 100%;
+}
+.editorial{
+  position: relative;
+  header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    nav{
+
+    }
+  }
+  //FOOD
+  .food{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+    position: relative;
+    &:after{
+      content: "";
+      background-color: rgba($editorialArticleOverlay, .60);
+      bottom: 0;
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+    article{
+      align-items: stretch;
+      margin: 0 auto;
+      padding: 10px;
+      position: relative;
+      width: calc(100% - 20px);
+      z-index: 2;
+      @media (min-width: $screen-sm-min) {
+        padding: 20px;
+        width: 600px;
+      }
+      @media (min-width: $screen-md-min) {
+        padding: 20px;
+      }
+      @media (min-width: $screen-lg-min) {
+        padding: 40px;
+      }
+      &:after{
+        content: "";
+        background-color: rgba($editorialArticleOverlay, .80);
+        bottom: 0;
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+      }
+      .content{
+        margin: 0 auto;
+        text-align: center;
+        padding: 40px 0;
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        &:before{
+          @include topAndBottomLines;
+          top: 0;
+        }
+        &:after{
+          @include topAndBottomLines;
+          bottom: 0;
+        }
+        i{
+          color: $editorialContentOrange;
+          font-size: 50px;
+          margin-top: 40px;
+        }
+        h1{
+          color: $editorialContentText;
+          font-size: 40px;
+          font-weight: 900;
+          margin: 40px 0;
+          text-transform: uppercase;
+        }
+        h2{
+          color: $editorialContentText;
+          font-size: 20px;
+          font-weight: 700;
+          margin:20px 0 0 0;
+          text-transform: uppercase;
+        }
+        h3{
+          color: $editorialContentOrange;
+          font-size: 20px;
+          font-weight: 800;
+          margin: 20px 0;
+          padding: 20px 0;
+          position: relative;
+          text-transform: uppercase;
+          &:before{
+            @include topAndBottomLines;
+            top: 0;
+          }
+          &:after{
+            @include topAndBottomLines;
+            bottom: 0;
+          }
+        }
+        p{
+          color: $editorialContentText;
+          font-size: 12px;
+          font-weight: 300;
+          margin: 40px 0 20px 0;
+          text-transform: uppercase;
+          span{
+            font-size: 16px;
+          }
+        }
+        @media (min-width: $screen-sm-min) {
+          h1{
+            font-size: 100px;
+          }
+          h2{
+            font-size: 40px;
+          }
+          h3{
+            font-size: 40px;
+          }
+          p{
+            font-size: 16px;
+            span{
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  //FOOD - END
+  .architecture{
+    background-color: $architectureBackground;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+    position: relative;
+    figure{
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-color: $architectureBackground;
+      border-style: solid;
+      border-bottom-width: 80px;
+      border-left-width: 40px;
+      border-right-width: 40px;
+      border-top-width: 80px;
+      left: 0;
+      min-height: 100vh;
+      position: absolute;
+      top: 0;
+      width: 50%;
+      z-index: 1;
+    }
+    article{
+      background-color: rgba($architectureArticleBackground, .75);
+      display: table;
+      min-height: 100vh;
+      padding: 20px 60px;
+      top: 0;
+      left: 40%;
+      position: absolute;
+      width: 60%;
+      z-index: 2;
+      .content{
+        color: $white;
+        display: table-cell;
+        margin: 0 auto;
+        text-align: center;
+        vertical-align: middle;
+        width: 300px;
+        h1{
+          color: $white;
+          margin: 0 0 40px 0;
+        }
+        h2{
+          color: $white;
+          margin: 0 0 40px 0;
+        }
+        p{
+          margin: 40px 0 20px 0;
+          padding: 20px 0;
+          position: relative;
+          &:before{
+            @include architectureTopAndBottomLines;
+            top: 0;
+          }
+          &:after{
+            @include architectureTopAndBottomLines
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
