@@ -58,6 +58,9 @@ $architectureArticleBackground: #FD383B;
     }
     article{
       align-items: stretch;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
       margin: 0 auto;
       padding: 10px;
       position: relative;
@@ -187,46 +190,74 @@ $architectureArticleBackground: #FD383B;
       min-height: 100vh;
       position: absolute;
       top: 0;
-      width: 50%;
+      width: 100%;
       z-index: 1;
+      @media (min-width: $screen-md-min) {
+       width: 50%;
+      }
     }
     article{
       background-color: rgba($architectureArticleBackground, .75);
       display: table;
       min-height: 100vh;
-      padding: 20px 60px;
-      top: 0;
-      left: 40%;
+      left: 10%;
+      padding: 20px;
       position: absolute;
-      width: 60%;
+      top: 0;
+      width: 90%;
       z-index: 2;
+      @media (min-width: $screen-md-min) {
+       left: 30%;
+       padding: 20px 60px;
+       width: 70%;
+      }
       .content{
         color: $white;
         display: table-cell;
         margin: 0 auto;
         text-align: center;
         vertical-align: middle;
-        width: 300px;
         h1{
           color: $white;
-          margin: 0 0 40px 0;
+          font-size: 50px;
+          font-weight: 900;
+          margin: 0 auto 40px auto;
         }
         h2{
-          color: $white;
-          margin: 0 0 40px 0;
+         color: $white;
+         font-size: 25px;
+         font-weight: 200;
+         margin: 0 auto 40px auto;
+         text-transform: uppercase;
         }
         p{
-          margin: 40px 0 20px 0;
-          padding: 20px 0;
-          position: relative;
-          &:before{
-            @include architectureTopAndBottomLines;
-            top: 0;
-          }
-          &:after{
-            @include architectureTopAndBottomLines
-            bottom: 0;
-          }
+         font-size: 14px;
+         font-weight: 100;
+         margin: 40px auto 20px auto;
+         padding: 20px 0;
+         position: relative;
+         &:before{
+           @include architectureTopAndBottomLines;
+           top: 0;
+         }
+         &:after{
+           @include architectureTopAndBottomLines
+           bottom: 0;
+         }
+        }
+        @media (min-width: $screen-md-min) {
+         h1{
+          font-size: 100px;
+          max-width: 600px;
+         }
+         h2{
+          font-size: 50px;
+          max-width: 600px;
+         }
+         p{
+          font-size: 16px;
+          max-width: 600px;
+         }
         }
       }
     }
