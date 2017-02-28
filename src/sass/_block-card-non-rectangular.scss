@@ -70,14 +70,16 @@
 						}
 						.clearfix{
 							text-align: center;
-							margin: -10px 0;
 							p{
 								color: $dgray2;
 								display: inline-flex;
 								font-size: 12px;
 								font-weight: 200;
-								margin-bottom: 10px;
-								margin-top: 10px;
+								margin-bottom: 5px;
+								margin-top: 5px;
+                &:last-child{
+                  margin-bottom: 0;
+                }
 								strong{
 									color: $dgray1;
 									font-weight: 600;
