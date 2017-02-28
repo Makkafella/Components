@@ -1,10 +1,11 @@
 var components = {
 	init: function() {
 		masonry.init();
-		request.init();
+		gradient.init();
+		// request.init();
 	},
 };
 
-jQuery(document).ready(function($) {
+window.addEventListener('load', function(){
 	components.init();
 });
