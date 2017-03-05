@@ -2,7 +2,7 @@ var components = {
 	init: function() {
 		masonry.init();
 		gradient.init();
-		// request.init();
+		$('#wishlist-select').dropdown();
 	},
 };
 

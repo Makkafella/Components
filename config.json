@@ -13,7 +13,9 @@
       "masonry/dist/masonry.pkgd.min.js",
       "imagesloaded/imagesloaded.pkgd.min.js",
       "nanoajax/nanoajax.min.js",
-      "grade/docs/dist/grade.js"
+      "grade/docs/dist/grade.js",
+      "semantic-ui-dropdown/dropdown.min.js",
+      "semantic-ui-transition/transition.min.js"
     ],
     "includes": [
       "**/*.js"

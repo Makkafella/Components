@@ -10,7 +10,9 @@
     "imagesloaded": "^4.1.1",
     "nanoajax": "^0.4.3",
     "font-awesome": "fontawesome#^4.7.0",
-    "grade": "*"
+    "grade": "*",
+    "semantic-ui-dropdown": "^2.2.9",
+    "semantic-ui-transition": "^2.2.9"
   },
   "resolutions": {
     "jquery": "2.x"

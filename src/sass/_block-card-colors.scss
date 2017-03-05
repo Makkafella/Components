@@ -1,0 +1,45 @@
+.card-colors{
+  .card{
+    .card-content{
+      background-color: $white;
+      border: 1px solid $bgray2;
+      border-radius: 4px;
+      padding: 5px;
+      width: 100%;
+      .card-color{
+        border: 1px solid $bgray2;
+        border-radius: 3px;
+        height: 100px;
+        &.hex-1ea8d4{
+          background-color: #1ea8d4;
+        }
+        &.hex-008dba{
+          background-color: #008dba;
+        }
+        &.hex-fac300{
+          background-color: #fac300;
+        }
+        &.hex-fba600{
+          background-color: #fba600;
+        }
+        &.hex-ff9900{
+          background-color: #ff9900;
+        }
+        &.hex-00c360{
+          background-color: #00c360;
+        }
+        &.hex-00ff8c{
+          background-color: #00ff8c;
+        }
+      }
+      .card-text{
+        h3{
+          font-size: 12px;
+          margin: 0;
+          padding: 10px 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

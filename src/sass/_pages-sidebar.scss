@@ -6,6 +6,8 @@
     bottom: 0;
     height: 100%;
     left: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     position: fixed;
     right: 0;
     top: 0;
@@ -29,21 +31,23 @@
         }
       }
       ul{
+        font-size: 0;
         li{
+          border-bottom: 1px solid $white;
           display: block;
-          color: $white;
-          font-size: 12px;
-          height: 80px;
-          line-height: 60px;
-          text-align: center;
-          padding: 10px;
-          width: 100%;
-          &:not(:last-child){
-            border-bottom: 1px solid $white;
+          a{
+            color: $white;
+            display: block;
+            font-size: 12px;
+            height: 80px;
+            line-height: 60px;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            &:hover{
+              text-decoration: none;
+            }
           }
-										&:first-child{
-											border-bottom: 1px solid $white;
-										}
         }
       }
     }

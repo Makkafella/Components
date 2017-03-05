@@ -40,10 +40,7 @@ section{
   &:before{
     content: " ";
     display: table;
-  }
-  &:first-child{
-    margin-top: 0;
-  }
+  } 
 }
 .reset-ul{
   font-size: 0;

@@ -62,6 +62,8 @@
 @import "src/dependencies/font-awesome/scss/stacked";
 @import "src/dependencies/font-awesome/scss/icons";
 @import "src/dependencies/font-awesome/scss/screen-reader";
+@import "src/dependencies/semantic-ui-dropdown/dropdown.min";
+@import "src/dependencies/semantic-ui-transition/transition.min";
 
 @import "animations";
 @import "mixins";
@@ -87,7 +89,8 @@
 @import "block-card-gradient";
 @import "block-card-non-rectangular";
 @import "block-masonry-grid";
-@import "block-wish-list";
+@import "block-wishlist";
+@import "block-card-colors";
 
 //Pages
 @import "pages-editorial";

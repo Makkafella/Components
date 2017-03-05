@@ -11,7 +11,28 @@
 		@media (min-width: $screen-lg-min) {
 			margin: -10px -20px;
 		}
-
+		&.card-colors{
+			margin: 0 -10px;
+			article{
+				padding: 10px;
+				width: 50%;
+				@media (min-width: $screen-xs-min) {
+					padding: 10px;
+					width: 33.33%;
+				}
+				@media (min-width: $screen-sm-min) {
+					margin-bottom: 0;
+					width: 25%;
+				}
+				@media (min-width: $screen-md-min) {
+					margin-bottom: 0;
+					width: 20%;
+				}
+				@media (min-width: $screen-lg-min) {
+					width: 10%;
+				}
+			}
+		}
 		article {
 			display: inline-flex;
 			margin-bottom: 10px;
@@ -35,6 +56,15 @@
 				padding: 20px;
 				width: 25%;
 			}
+			&.card-full{
+		    width: 100%;
+				h4{
+					margin: 0;
+				}
+		    a{
+		      width: 100%;
+		    }
+		  }
 		}
 	}
 }
