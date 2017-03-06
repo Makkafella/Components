@@ -18,21 +18,10 @@
 			</div>
 		</div>
 		<div class="col-sm-12">
-			<div class="row add-to-wishlist">
-				<div class="col-sm-12 ">
-					<h4>Add to wishlist</h4>
-				</div>
-				<div class="col-lg-10 wishlist-container">
-					<div class="new-list">
-						<input data-product-sku="272-00654" class="new-wishlist" type="text" placeholder="Add name for new list" value="" name="quantity" />
-					</div>
-					<div class="selection-list">
-						{{> wishlist-select}}
-					</div>
-				</div>
-				<div class="col-lg-2 buttons">
-					<button class="button quick-buy" data-product-sku="272-00654">+</button>
-				</div>
+			<div class="add-to-wishlist selection-list buttons">
+				<h4><i class="fa fa-bookmark"></i> Add to wishlist</h4>
+				{{> wishlist-select}}
+				<button class="button whishlist" data-wishlist-value="000-000-000-000" data-whishlist-name="" data-product-sku="272-00654">+</button>
 			</div>
 		</div>
 	</div>

@@ -2,7 +2,8 @@ var components = {
 	init: function() {
 		masonry.init();
 		gradient.init();
-		$('#wishlist-select').dropdown();
+		// nanoajax.init();
+		wishlist.init();
 	},
 };
 
