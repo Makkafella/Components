@@ -1,0 +1,118 @@
+.card-product{
+  .item-wrapper{
+    background-color: #3C4B51;
+    color: $white;
+    font-size: 12px;
+    width: 200px;
+    .image{
+      img{
+        height: auto;
+        width: 100%;
+      }
+    }
+    .item-name{
+      padding: 10px;
+      h4{
+        color: $white;
+        margin-bottom: 0;
+        margin-top: 0;
+        text-align: center;
+      }
+      p{
+        line-height: 16px;
+        margin-bottom: 0;
+        margin-top: 5px;
+        text-align: center;
+      }
+      a{
+        color: $white;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+    .footer{
+      .amount-price-stock{
+        padding: 0 10px 10px 10px;
+        div{
+          float: left;
+          text-align: center;
+          width: 50%;
+          &.right{
+            float: right;
+          }
+          &.campaing-info{
+            float: none;
+            margin-left: -2px;
+            margin-right: -2px;
+            padding-bottom: 10px;
+            text-align: center;
+            width: 100%;
+            p{
+              display: inline-block;
+              line-height: 1;
+              margin-top: 0;
+              padding-left: 2px;
+              padding-right: 2px;
+            }
+          }
+          input{
+            display: block;
+            font-size: 10px;
+            height: 30px;
+            margin: 0 auto;
+            text-align: center;
+            width: 40px;
+          }
+          i{
+            display: block;
+            font-size: 20px;
+            line-height: 30px;
+          }
+          span{
+            display: block;
+            line-height: 1;
+            margin-top: 10px;
+          }
+        }
+      }
+      .add-to-btns{
+        padding: 0 10px 10px 10px;
+        button{
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          background-color: #ee1c25;
+          border-color: #c60f17;
+          border-radius: 0;
+          border-style: solid;
+          border-width: 0;
+          color: #fff;
+          display: inline-flex;
+          float: left;
+          font-size: 12px;
+          font-weight: normal;
+          line-height: normal;
+          margin: 0;
+          padding: 6px 10px;
+          text-decoration: none;
+          transition: background-color 0.2s ease, color 0.2s ease;
+          &.right{
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}
+.flex-grid{
+  main{
+    &.card-product{
+      margin: -10px;
+      text-align: center;
+      article{
+        padding: 10px;
+        width: 220px;
+      }
+    }
+  }
+}
