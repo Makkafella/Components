@@ -12,7 +12,7 @@
       .card-image{
         background-color: $l_green;
         overflow: hidden;
-        padding: 40px 40px 20px 40px;
+        padding: 40px 20px 0px 20px;
         position: relative;
         &:after{
           background-color: $white;
@@ -43,14 +43,37 @@
           width: 100%;
           z-index: 1;
         }
-        img{
-          height: auto;
+        ul{
           position: relative;
-          transform: scale(1);
-          transform-origin: center center;
-          transition: transform .8s cubic-bezier(.19, 1, .22, 1);
-          width: 100%;
           z-index: 3;
+          &.lightSlider{
+            li{
+              padding: 0 10px;
+            }
+          }
+          &:not(.lightSlider){
+            &:not(.lSPager){
+              padding-bottom: 30px;
+              li{
+                padding: 0 10px;
+              }
+              li{
+                &:not(:first-child){
+                  display: none;
+                }
+              }
+            }
+
+          }
+          img{
+            height: auto;
+            position: relative;
+            transform: scale(1);
+            transform-origin: center center;
+            transition: transform .8s cubic-bezier(.19, 1, .22, 1);
+            width: 100%;
+            z-index: 3;
+          }
         }
       }
       .card-text{
@@ -85,7 +108,7 @@
             transform: skewY(0deg);
           }
           img{
-            transform: scale(1.05);
+            transform: scale(1);
           }
         }
       }

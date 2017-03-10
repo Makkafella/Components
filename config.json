@@ -15,7 +15,8 @@
       "nanoajax/nanoajax.min.js",
       "grade/docs/dist/grade.js",
       "semantic-ui-dropdown/dropdown.min.js",
-      "semantic-ui-transition/transition.min.js"
+      "semantic-ui-transition/transition.min.js",
+      "lightslider/dist/js/lightslider.js"
     ],
     "includes": [
       "**/*.js"

@@ -4,6 +4,7 @@ var components = {
 		gradient.init();
 		// nanoajax.init();
 		wishlist.init();
+		portfolioSlider.init();
 	},
 };
 

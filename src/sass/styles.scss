@@ -63,8 +63,11 @@
 @import "src/dependencies/font-awesome/scss/icons";
 @import "src/dependencies/font-awesome/scss/screen-reader";
 
+// @import "src/dependencies/lightslider/dist/css/lightslider";
+
 @import "src/dependencies/semantic-ui-dropdown/dropdown.min";
 @import "src/dependencies/semantic-ui-transition/transition.min";
+@import "dependencie-lightslider";
 
 @import "animations";
 @import "mixins";
