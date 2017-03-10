@@ -1,6 +1,25 @@
 .card-portfolio{
   .card{
-    a{
+    &.is-zoomed{
+      @media (min-width: $screen-sm-min) {
+				width: 100%;
+			}
+			@media (min-width: $screen-md-min) {
+				margin-bottom: 0;
+				padding: 10px;
+				width: 50%;
+			}
+			@media (min-width: $screen-lg-min) {
+				padding: 20px;
+				width: 50%;
+			}
+      .zoom-toggle{
+        i:before{
+          content: $fa-var-search-minus;
+        }
+      }
+    }
+    .wrapper{
       border: 1px solid $bgray4;
       border-radius: 4px;
       box-shadow: 1px 1px 4px 0px rgba(230,228,223,1);
@@ -9,6 +28,21 @@
       position: relative;
       text-decoration: none;
       transition: border-color .8s cubic-bezier(.19, 1, .22, 1);
+      .zoom-toggle{
+        cursor: pointer;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 5;
+        i{
+          color: $white;
+          font-size: 20px;
+          &:before{
+            content: $fa-var-search-plus;
+          }
+        }
+      }
       .card-image{
         background-color: $l_green;
         overflow: hidden;

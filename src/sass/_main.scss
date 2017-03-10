@@ -16,6 +16,7 @@ iframe {
 
 main{
   min-height: 400px;
+  overflow: hidden;
   &:before{
     content: " ";
     display: table;
@@ -40,7 +41,7 @@ section{
   &:before{
     content: " ";
     display: table;
-  } 
+  }
 }
 .reset-ul{
   font-size: 0;

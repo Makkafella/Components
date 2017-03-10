@@ -39,8 +39,8 @@
 			padding: 0;
 			position: relative;
 			vertical-align: top;
+			width: 100%;
 			@media (min-width: $screen-xs-min) {
-				width: 100%;
 			}
 			@media (min-width: $screen-sm-min) {
 				margin-bottom: 0;
