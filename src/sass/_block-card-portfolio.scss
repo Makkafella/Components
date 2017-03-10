@@ -1,0 +1,94 @@
+.card-portfolio{
+  .card{
+    a{
+      border: 1px solid $bgray4;
+      border-radius: 4px;
+      box-shadow: 1px 1px 4px 0px rgba(230,228,223,1);
+      display: block;
+      overflow: hidden;
+      position: relative;
+      text-decoration: none;
+      transition: border-color .8s cubic-bezier(.19, 1, .22, 1);
+      .card-image{
+        background-color: $l_green;
+        overflow: hidden;
+        padding: 40px 40px 20px 40px;
+        position: relative;
+        &:after{
+          background-color: $white;
+          bottom: -20%;
+          content: "";
+          display: block;
+          height: 40%;
+          left: 0;
+          position: absolute;
+          right: 0;
+          transform-origin: top left;
+  				transform: skewY(-4deg);
+          width: 100%;
+          z-index: 2;
+        }
+        &:before{
+          background-color: $d_green2;
+          bottom: -80%;
+          content: "";
+          display: block;
+          height: 100%;
+          left: 0;
+          position: absolute;
+          right: 0;
+          transform-origin: top left;
+  				transform: skewY(-4deg);
+          transition: all .25s linear;
+          width: 100%;
+          z-index: 1;
+        }
+        img{
+          height: auto;
+          position: relative;
+          transform: scale(1);
+          transform-origin: center center;
+          transition: transform .8s cubic-bezier(.19, 1, .22, 1);
+          width: 100%;
+          z-index: 3;
+        }
+      }
+      .card-text{
+        background-color: $white;
+        padding:0 10px 40px 10px;
+        .card-tag{
+          color: $dgray2;
+          font-size: 12px;
+        }
+        h3{
+          color: $black;
+          font-size: 18px;
+          margin-bottom: 10px;
+          margin-top: 5px;
+        }
+        p{
+          color: $black;
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 10px;
+          margin-top: 0;
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+      &:hover{
+        border-color: $bgray3;
+        .card-image{
+          &:before{
+            bottom: 20%;
+            transform: skewY(0deg);
+          }
+          img{
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+}
