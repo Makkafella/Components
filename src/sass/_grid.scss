@@ -41,20 +41,23 @@
 			vertical-align: top;
 			width: 100%;
 			@media (min-width: $screen-xs-min) {
-			}
-			@media (min-width: $screen-sm-min) {
 				margin-bottom: 0;
 				padding: 10px;
 				width: 50%;
 			}
-			@media (min-width: $screen-md-min) {
+			@media (min-width: $screen-sm-min) {
 				margin-bottom: 0;
 				padding: 10px;
 				width: 33.33%;
 			}
+			@media (min-width: $screen-md-min) {
+				margin-bottom: 0;
+				padding: 10px;
+				width: 25%;
+			}
 			@media (min-width: $screen-lg-min) {
 				padding: 20px;
-				width: 25%;
+				width: 20%;
 			}
 			&.card-full{
 		    width: 100%;

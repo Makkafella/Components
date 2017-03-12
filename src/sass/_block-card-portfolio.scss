@@ -19,9 +19,9 @@
         z-index: 5;
         i{
           color: $white;
-          font-size: 20px;
+          font-size: 15px;
           &:before{
-            content: $fa-var-search-plus;
+            content: $fa-var-plus-circle;
           }
         }
       }
@@ -132,22 +132,23 @@
     }
     //Card states
     &.is-zoomed{
-      @media (min-width: $screen-sm-min) {
+      @media (min-width: $screen-xs-min) {
 				width: 100%;
 			}
-			@media (min-width: $screen-md-min) {
-				margin-bottom: 0;
-				padding: 10px;
+			@media (min-width: $screen-sm-min) {
 				width: 66.66%;
+			}
+			@media (min-width: $screen-md-min) {
+				width: 50%;
 			}
 			@media (min-width: $screen-lg-min) {
 				padding: 20px;
-				width: 50%;
+				width: 40%;
 			}
       .wrapper{
         .zoom-toggle{
           i:before{
-            content: $fa-var-search-minus;
+            content: $fa-var-minus-circle;
           }
         }
       }
@@ -157,7 +158,7 @@
       .wrapper{
         .zoom-toggle{
           display: none;
-          @media (min-width: $screen-sm-min) {
+          @media (min-width: $screen-xs-min) {
     				display: block;
     			}
         }
