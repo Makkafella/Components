@@ -15,6 +15,8 @@ iframe {
 }
 
 main{
+  margin: 0 auto;
+  max-width: 1440px;
   min-height: 400px;
   overflow: hidden;
   &:before{

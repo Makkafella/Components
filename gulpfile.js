@@ -107,7 +107,7 @@ gulp.task('gulp-check-unused-css', function() {
 
 gulp.task('default', ['html', 'scripts', 'sass', 'copy']);
 gulp.task('watch',function () {
-  plugins.livereload.listen();
+  // plugins.livereload.listen();
 	gulp.watch(config.paths.src.sass + '**/*.scss', ['sass']);
   gulp.watch(config.paths.src.html.dir + '**/*.html', ['html']);
   gulp.watch(config.paths.src.less + '**/*.less', ['less']);

@@ -1,7 +1,7 @@
 var portfolioSlider = {
   init: function(){
     var slides = [];
-    $('.card-image').each(function( index) {
+    $('.card-portfolio .card-image').each(function( index) {
       slides[index] = $(this).find('ul').lightSlider({
         controls: false,
         easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
@@ -32,7 +32,7 @@ var portfolioSlider = {
       });
       $('html, body').animate({
         scrollTop: $(zoomId).offset().top
-      }, 2000);
+      }, 250);
     });
   }
 };

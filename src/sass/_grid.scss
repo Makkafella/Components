@@ -6,10 +6,10 @@
 		@media (min-width: $screen-xs-min) {}
 		@media (min-width: $screen-sm-min) {}
 		@media (min-width: $screen-md-min) {
-			margin: -5px -10px;
+			margin: -10px;
 		}
 		@media (min-width: $screen-lg-min) {
-			margin: -10px -20px;
+			margin: -20px;
 		}
 		&.card-colors{
 			margin: 0 -10px;
