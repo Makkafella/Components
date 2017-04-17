@@ -5,6 +5,9 @@ html, body {
   line-height: 28px;
   @include body_regular();
   background-color: $bgray1;
+  background-image: url('../dummy-content/repeat-bg.png');
+  background-repeat: repeat;
+  background-position: center center;
   color: $black;
   height: 100%;
   width: 100%;
