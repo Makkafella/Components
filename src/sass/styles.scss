@@ -5,20 +5,26 @@
 
 // Reset
 @import "src/dependencies/sass-bootstrap/lib/normalize";
+
 // @import "src/dependencies/sass-bootstrap/lib/print";
 
 // Core CSS
+
 @import "src/dependencies/sass-bootstrap/lib/scaffolding";
 @import "src/dependencies/sass-bootstrap/lib/type";
+
 //@import "src/dependencies/sass-bootstrap/lib/code";
-@import "src/dependencies/sass-bootstrap/lib/grid";
+
+// @import "src/dependencies/sass-bootstrap/lib/grid";
+
 // @import "src/dependencies/sass-bootstrap/lib/tables";
 // @import "src/dependencies/sass-bootstrap/lib/forms";
 // @import "src/dependencies/sass-bootstrap/lib/buttons";
 // @import "src/dependencies/sass-bootstrap/lib/dropdowns";
 
 // Components
-@import "src/dependencies/sass-bootstrap/lib/component-animations";
+// @import "src/dependencies/sass-bootstrap/lib/component-animations";
+
 // @import "src/dependencies/sass-bootstrap/lib/glyphicons";
 // @import "src/dependencies/sass-bootstrap/lib/dropdowns";
 // @import "src/dependencies/sass-bootstrap/lib/button-groups";
@@ -65,15 +71,15 @@
 
 // @import "src/dependencies/lightslider/dist/css/lightslider";
 
-@import "src/dependencies/semantic-ui-dropdown/dropdown.min";
-@import "src/dependencies/semantic-ui-transition/transition.min";
+// @import "src/dependencies/semantic-ui-dropdown/dropdown.min";
+// @import "src/dependencies/semantic-ui-transition/transition.min";
 @import "dependencie-lightslider";
 
 @import "animations";
 @import "mixins";
 @import 'ie-only';
 
-@import "hover/imports";
+// @import "hover/imports";
 
 @import 'main';
 @import "grid";
@@ -86,18 +92,18 @@
 // Usercontrols
 
 // Block
-@import "block-content-puff";
-@import "block-image-puff";
-@import "block-card";
-@import "block-card-duotone";
-@import "block-card-gradient";
-@import "block-card-non-rectangular";
-@import "block-masonry-grid";
-@import "block-wishlist";
-@import "block-card-colors";
-@import "block-card-product";
+// @import "block-content-puff";
+// @import "block-image-puff";
+// @import "block-card";
+// @import "block-card-duotone";
+// @import "block-card-gradient";
+// @import "block-card-non-rectangular";
+// @import "block-masonry-grid";
+// @import "block-wishlist";
+// @import "block-card-colors";
+// @import "block-card-product";
 @import "block-card-portfolio";
 
 //Pages
-@import "pages-editorial";
-@import "pages-sidebar";
+// @import "pages-editorial";
+// @import "pages-sidebar";

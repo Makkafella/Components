@@ -1,6 +1,67 @@
+.hero{
+  background-image: url('http://makkafella.se/wp-content/themes/makkafella5/assets/img/hero-bg.png');
+  background-position: center;
+  background-attachment: fixed;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  position: relative;
+  @media (min-width: $screen-md-min) {
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+  @media (min-width: $screen-lg-min) {
+    padding-bottom: 90px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+  }
+  &:after{
+    background-color: $bgray1;
+    bottom: -190px;
+    content: "";
+    display: block;
+    height: 200px;
+    left: 0;
+    transform: skewY(-2deg);
+    transform-origin: bottom left;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    @media (min-width: $screen-md-min) {
+      bottom: -170px;
+    }
+  }
+  .hero-content{
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    h1{
+      font-size: 60px;
+      margin-bottom: 40px;
+      margin-top: 0;
+      span{
+        display: block;
+        font-size: 30px;
+        font-weight: 300;
+      }
+    }
+    img{
+      height: auto;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  }
+}
 .card-portfolio{
   .card{
     .wrapper{
+      background-clip: padding-box;
       border: 1px solid $bgray4;
       border-radius: 4px;
       box-shadow: 1px 1px 4px 0px rgba(230,228,223,1);
@@ -95,7 +156,7 @@
       }
       .card-text{
         background-color: $white;
-        padding:0 10px 40px 10px;
+        padding:0 10px 20px 10px;
         .card-tag{
           color: $dgray2;
           font-size: 12px;

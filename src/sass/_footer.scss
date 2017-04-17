@@ -1,9 +1,118 @@
 footer {
+	background-color: $d_green2;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 60px;
+  position: relative;
+  @media (min-width: $screen-xs-min) {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+  }
+  @media (min-width: $screen-lg-min) {
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 60px;
+  }
+	&:after{
+    background-color: $bgray1;
+    top: 0px;
+    content: "";
+    display: block;
+    height: 60px;
+    left: 0;
+    transform: skewY(-2deg);
+    transform-origin: bottom left;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
 	&:before{
     content: " ";
     display: table;
   }
-  @media (min-width: $screen-md-min) {
-
-  }
+	.content{
+		padding-top: 40px;
+		@media (min-width: $screen-sm-min) {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+		}
+		.logo{
+			text-align: center;
+			a{
+				color: $white;
+				display: block;
+				float: none;
+				font-size: 16px;
+				@media (min-width: $screen-sm-min) {
+					float: left;
+				}
+				&:hover{
+					text-decoration: none;
+				}
+				img{
+					display: block;
+					height: auto;
+					margin-bottom: 5px;
+					margin-left: auto;
+					margin-right: auto;
+					width: 80px;
+				}
+				span{
+					display: block;
+					font-size: 20px;
+	        font-weight: 600;
+				}
+			}
+		}
+		.links{
+			ul{
+				float: none;
+				text-align: center;
+				width: 100%;
+				@media (min-width: $screen-sm-min) {
+					float: right;
+					text-align: left;
+					width: auto;
+				}
+				li{
+					display: inline-flex;
+					&:not(:last-child){
+						margin-right: 10px;
+					}
+					a{
+						display: block;
+						img{
+							height: auto;
+							width: 40px;
+						}
+					}
+				}
+			}
+		}
+		.item{
+			align-items: center;
+			width: 100%;
+			@media (min-width: $screen-sm-min) {
+				width: 33.33%;
+			}
+			&:not(:last-child){
+				margin-bottom: 15px;
+				padding-right: 0;
+				@media (min-width: $screen-sm-min) {
+					padding-right: 20px;
+					margin-bottom: 0;
+				}
+			}
+			p{
+				color: $white;
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+	}
 }
