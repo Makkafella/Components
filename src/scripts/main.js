@@ -5,6 +5,7 @@ var components = {
 		// nanoajax.init();
 		wishlist.init();
 		portfolioSlider.init();
+		navPlacing.init();
 	},
 };
 

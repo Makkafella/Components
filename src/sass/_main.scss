@@ -8,6 +8,7 @@ html, body {
   background-image: url('../dummy-content/repeat-bg.png');
   background-repeat: repeat;
   background-position: center center;
+  background-attachment: fixed;
   color: $black;
   height: 100%;
   width: 100%;
@@ -24,7 +25,7 @@ iframe {
 main{
   margin: 0 auto;
   max-width: 1440px;
-  min-height: 400px;
+  min-height: 1400px;
   overflow: hidden;
   &:before{
     content: " ";
